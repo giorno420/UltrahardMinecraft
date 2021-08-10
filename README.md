@@ -1,4 +1,4 @@
-<img src="https://img.shields.io/tokei/lines/github/giorno420/UltrahardModeMinecraft?label=Total%20lines">
+<img src="https://img.shields.io/tokei/lines/github/giorno420/UltrahardModeMinecraft?label=Total%20lines"> <img alt="Discord" src="https://img.shields.io/discord/794061682279317554"> <img alt="Bitbucket open issues" src="https://img.shields.io/bitbucket/issues/giorno420/UltrahardModeMinecraft">
 
 # UltrahardModeMinecraft
 i originally made this for a youtuber but he pussied out because he didnt wanna pay for it so i just decided to make this open source so you can suffer in your own server!
@@ -20,3 +20,9 @@ Message me on <a href="https://discord.com/users/587539085439008780">Discord</a>
 
 ## Note
 This plugin is NOT DONE. When run with other plugins or too many people, this may have unexpected side effects. I do not know what those effects are since i dont have anyone to play with :(
+
+## License
+This project is licensed under the GPL-3.0 License
+
+## Fund this project
+If you wanna donate to this project and make my suffering suffer less, visit my PayPal page https://paypal.me/giorno42069 and send me like literally anything. I will forever remember you
