@@ -1,3 +1,5 @@
+<img src="https://img.shields.io/tokei/lines/github/giorno420/UltrahardModeMinecraft?label=Total%20lines">
+
 # UltrahardModeMinecraft
 i originally made this for a youtuber but he pussied out because he didnt wanna pay for it so i just decided to make this open source so you can suffer in your own server!
 
