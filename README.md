@@ -5,8 +5,8 @@ i originally made this for a youtuber but he pussied out because he didnt wanna 
 
 ## Features
  - Beds have a 1 in 100 chance of exploding as the nether is slowly merging with the overworld. (not done since chunk generation mechanics require math and im just stupid)
- - All creepers are charged and explode without a charge effect, they just immediately go kaboom since thats how bombs work.
- - All zombies are fast because its creepy. (still being implemented)
+ - All creepers are charged and explode without a charge effect, they just immediately explode.
+ - All zombies are fast because its creepy.
  - All skeletons, strays and wither skeletons give you a withering effect, due to them being dead. They also have better stuff than they used to have.
  - All cows, sheep, pigs, chicken and fish have a 1 in 2 chance of dying on spawn, hence your food source is halved.
  - Each time you get close to something that is changed, it shows you a hint!
@@ -14,7 +14,8 @@ i originally made this for a youtuber but he pussied out because he didnt wanna 
  - All Endermen attack you when you enter their proximity.
  - When you touch lava, your health is halved, and when you enter lava, you die, because thats realistic.
  - All spiders are faster, since all the above wasn't creepy enough.
- - You can't use iron tools until your XP Level is 5 or over it. (working on this)
+ - You can't use iron tools until your XP Level is 5 or over it.
+ - You can't use diamond tools until your XP Level is 7 or over it.
 
 Message me on <a href="https://discord.com/users/587539085439008780">Discord</a> to use this on a video or something, or if you wanna hire me (Jaden-MAN please accept my offer)
 ## Issues
@@ -33,3 +34,9 @@ This project is licensed under the GPL-3.0 License
 
 ## Fund this project
 If you wanna donate to this project and make my suffering suffer less, visit my PayPal page https://paypal.me/giorno42069 and send me like literally anything. You will forever have a place in my heart :D
+
+## Future features
+I have no clue what else to add :D
+
+If you think of a good idea for me to add, just make an issue with the "New Idea" tag!
+Also don't make them too complicated since this is only my 2nd plugin 
