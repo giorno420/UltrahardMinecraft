@@ -1,0 +1,9 @@
+* text=auto
+
+# Check out with crlf (Windows) line endings
+*.java text diff=java eol=crlf
+
+# Check out with lf (UNIX) line endings
+.gitignore text eol=lf
+.gitattributes text eol=lf
+*.md text eol=lf
