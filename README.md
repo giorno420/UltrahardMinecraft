@@ -12,7 +12,7 @@ i originally made this for a youtuber but he pussied out because he didnt wanna 
  - Each time you get close to something that is changed, it shows you a hint!
  - All Iron Golems attack you when you enter their proximity.
  - All Endermen attack you when you enter their proximity.
- - When you touch lava, your health is halved, and when you enter lava, you die, because thats realistic.
+ - When you touch lava, you instantly die, because in real life, you can't really swim that way in lava
  - All spiders are faster, since all the above wasn't creepy enough.
  - You can't use iron tools until your XP Level is 5 or over it. (kinda broken)
  - You can't use diamond tools until your XP Level is 7 or over it. (kinda broken)
