@@ -16,6 +16,7 @@ i originally made this for a youtuber but he pussied out because he didnt wanna 
  - All spiders are faster, since all the above wasn't creepy enough.
  - You can't use iron tools until your XP Level is 5 or over it.
  - You can't use diamond tools until your XP Level is 7 or over it.
+ - A regular zombie dying has a 1 in 50 chance of turning into a titan (a giant zombie. I'm gonna work on the zombie hostility AI soon)
 
 Message me on <a href="https://discord.com/users/587539085439008780">Discord</a> to use this on a video or something, or if you wanna hire me (Jaden-MAN please accept my offer)
 ## Issues
