@@ -14,8 +14,8 @@ i originally made this for a youtuber but he pussied out because he didnt wanna 
  - All Endermen attack you when you enter their proximity.
  - When you touch lava, you instantly die, because in real life, you can't really swim that way in lava
  - All spiders are faster, since all the above wasn't creepy enough.
- - You can't use iron tools until your XP Level is 5 or over it. (kinda broken)
- - You can't use diamond tools until your XP Level is 7 or over it. (kinda broken)
+ - You can't use iron tools until your XP Level is 5 or over it. (kinda scuffed)
+ - You can't use diamond tools until your XP Level is 7 or over it. (kinda scuffed)
  - A regular zombie dying has a 1 in 50 chance of turning into a titan (a giant zombie. I'm gonna work on the zombie hostility AI soon)
  - Remember how mobs have better loot? Yeah, they will NEVER drop any of it, because the chances of them dropping their loot are 0%
 
