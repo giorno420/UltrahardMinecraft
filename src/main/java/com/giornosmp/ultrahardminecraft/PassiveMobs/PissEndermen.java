@@ -22,7 +22,6 @@ public class PissEndermen implements Listener {
             for (Entity entity : player.getNearbyEntities(9, 9, 9)){
 
                 if (player.getGameMode() != GameMode.SURVIVAL){ break; }
-                if (player.isOp()){ break; }
 
                 if (entity instanceof Enderman) {
 

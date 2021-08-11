@@ -52,5 +52,29 @@ public class ReduceFoodSources implements Listener {
                 System.out.print("");
             }
         }
+        if (passivemobspawn.getEntityType() == EntityType.COD){
+
+            int codRoulette = randint.nextInt(2);
+
+            if (codRoulette == 0){
+                Cod cod = (Cod) passivemobspawn.getEntity();
+                cod.damage(14);
+            }
+            else{
+                System.out.print("");
+            }
+        }
+        if (passivemobspawn.getEntityType() == EntityType.SALMON){
+
+            int salmonRoulette = randint.nextInt(2);
+
+            if (salmonRoulette == 0){
+                Salmon salmon = (Salmon) passivemobspawn.getEntity();
+                salmon.damage(14);
+            }
+            else{
+                System.out.print("");
+            }
+        }
     }
 }

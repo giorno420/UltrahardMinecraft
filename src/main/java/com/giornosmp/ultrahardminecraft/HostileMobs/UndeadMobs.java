@@ -1,5 +1,6 @@
 package com.giornosmp.ultrahardminecraft.HostileMobs;
 
+import com.sun.tools.javac.jvm.Items;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.*;
@@ -21,53 +22,46 @@ public class UndeadMobs implements Listener {
         // so I decided to just copy paste it
         // instead of using a function or an ArrayList
 
-        ItemStack mobhelmet = new ItemStack(Material.IRON_HELMET);
         ItemStack chestplate = new ItemStack(Material.IRON_CHESTPLATE);
-        ItemStack leggings = new ItemStack(Material.IRON_LEGGINGS);
         ItemStack boots = new ItemStack(Material.IRON_BOOTS);
 
         if (undeadmobspawnevent.getEntityType() == EntityType.ZOMBIE) {
 
             Zombie zombie = (Zombie) undeadmobspawnevent.getEntity();
 
-            zombie.getEquipment().setHelmet(mobhelmet);
-            zombie.getEquipment().setChestplate(chestplate);
-            zombie.getEquipment().setLeggings(leggings);
+            zombie.getEquipment().setHelmet(new ItemStack(Material.GOLDEN_HELMET));
+            zombie.getEquipment().setChestplate(new ItemStack(Material.LEATHER_CHESTPLATE));
             zombie.getEquipment().setBoots(boots);
+            zombie.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 1000000000, 1, false, false));
         }
 
         if (undeadmobspawnevent.getEntityType() == EntityType.HUSK) {
 
             Husk husk = (Husk) undeadmobspawnevent.getEntity();
 
-            husk.getEquipment().setHelmet(mobhelmet);
-            husk.getEquipment().setChestplate(chestplate);
-            husk.getEquipment().setLeggings(leggings);
-            husk.getEquipment().setBoots(boots);
+            husk.getEquipment().setHelmet(new ItemStack(Material.CHAINMAIL_HELMET));
+            husk.getEquipment().setChestplate(new ItemStack(Material.CHAINMAIL_CHESTPLATE));
+            husk.getEquipment().setLeggings(new ItemStack(Material.CHAINMAIL_LEGGINGS));
 
-            husk.getEquipment().setItemInMainHand(new ItemStack(Material.NETHERITE_HOE));
+            husk.getEquipment().setItemInMainHand(new ItemStack(Material.WOODEN_AXE));
         }
 
         if (undeadmobspawnevent.getEntityType() == EntityType.WITHER_SKELETON) {
 
             WitherSkeleton witherskeleton = (WitherSkeleton) undeadmobspawnevent.getEntity();
 
-            witherskeleton.getEquipment().setHelmet(mobhelmet);
-            witherskeleton.getEquipment().setChestplate(chestplate);
-            witherskeleton.getEquipment().setLeggings(leggings);
-            witherskeleton.getEquipment().setBoots(boots);
+            witherskeleton.getEquipment().setHelmet(new ItemStack(Material.LEATHER_HELMET));
+            witherskeleton.getEquipment().setChestplate(new ItemStack(Material.LEATHER_CHESTPLATE));
 
-            witherskeleton.getEquipment().setItemInMainHand(new ItemStack(Material.IRON_HOE));
+            witherskeleton.getEquipment().setItemInMainHand(new ItemStack(Material.IRON_SWORD));
+            witherskeleton.getEquipment().setItemInOffHand(new ItemStack(Material.SHIELD));
         }
 
         if (undeadmobspawnevent.getEntityType() == EntityType.DROWNED) {
 
             Drowned drowned = (Drowned) undeadmobspawnevent.getEntity();
 
-            drowned.getEquipment().setHelmet(mobhelmet);
             drowned.getEquipment().setChestplate(chestplate);
-            drowned.getEquipment().setLeggings(leggings);
-            drowned.getEquipment().setBoots(boots);
             drowned.getEquipment().setItemInMainHand(new ItemStack(Material.TRIDENT));
         }
 
@@ -76,15 +70,16 @@ public class UndeadMobs implements Listener {
             Stray stray = (Stray) undeadmobspawnevent.getEntity();
 
             ItemStack enchantedBow = new ItemStack(Material.BOW);
-            enchantedBow.addUnsafeEnchantment(Enchantment.ARROW_KNOCKBACK, 10);
+            enchantedBow.addUnsafeEnchantment(Enchantment.ARROW_DAMAGE, 3);
             stray.getEquipment().setItemInMainHand(enchantedBow);
         }
         if (undeadmobspawnevent.getEntityType() == EntityType.SKELETON) {
 
             Skeleton skeleton = (Skeleton) undeadmobspawnevent.getEntity();
+            skeleton.getEquipment().setHelmet(new ItemStack(Material.IRON_HELMET));
 
             ItemStack enchantedBow = new ItemStack(Material.BOW);
-            enchantedBow.addUnsafeEnchantment(Enchantment.ARROW_KNOCKBACK, 10);
+            enchantedBow.addUnsafeEnchantment(Enchantment.ARROW_DAMAGE, 3);
             skeleton.getEquipment().setItemInMainHand(enchantedBow);
         }
         if (undeadmobspawnevent.getEntityType() == EntityType.SPIDER) {
@@ -92,6 +87,12 @@ public class UndeadMobs implements Listener {
             Spider spider = (Spider) undeadmobspawnevent.getEntity();
 
             spider.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 1000000000, 2, false, false));
+        }
+        if (undeadmobspawnevent.getEntityType() == EntityType.CAVE_SPIDER){
+
+            CaveSpider cavespider = (CaveSpider) undeadmobspawnevent.getEntity();
+
+            cavespider.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 1000000000, 2, false, false));
         }
 
     }

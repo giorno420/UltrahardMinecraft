@@ -17,7 +17,6 @@ public class InstantlyExplodingCreepers implements Listener {
         for (Entity entity : player.getNearbyEntities(4, 3, 4)){
 
             if (player.getGameMode() != GameMode.SURVIVAL) { break; }
-            if (player.isOp()) { break; }
 
             if (entity instanceof Creeper) {
 

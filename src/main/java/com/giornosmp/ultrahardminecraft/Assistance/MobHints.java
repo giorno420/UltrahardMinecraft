@@ -31,6 +31,8 @@ public class MobHints implements Listener {
             EntityType.SHEEP.name(),
             EntityType.COW.name(),
             EntityType.PIG.name(),
+            EntityType.COD.name(),
+            EntityType.SALMON.name()
     };
 
     Set<String> hostileMobs = new HashSet<>(Arrays.asList(hostiles_));
@@ -51,7 +53,7 @@ public class MobHints implements Listener {
 
             if (findingHostiles <= 1) {
                 if (hostileMobs.contains(entity.getType().name())) {
-                    player.sendRawMessage(pluginPrefix + ChatColor.ITALIC + "As you may have noticed:\n   - All zombies have full iron\n   - All skeletons and strays have punch 10 bows\n   - All spiders are faster because that's realistic\n   - All creepers are charged and instantly explode\n\nand more to come!");
+                    player.sendRawMessage(pluginPrefix + ChatColor.ITALIC + "The following is to help you out a bit, just to help you out:\n   - All zombies have better armor\n   - All skeletons and strays have stronger bows and give withering effects\n   - All spiders and cave spiders are faster\n   - All creepers are charged and instantly explode\n\nand more to come!");
                     findingHostiles++;
                 }
             }
