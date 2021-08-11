@@ -10,9 +10,12 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
+import java.util.Objects;
 import java.util.Set;
 import java.util.HashSet;
 import java.util.Arrays;
+
+import com.giornosmp.ultrahardminecraft.Experience.ExperienceManager;
 
 public class ToolsRequireExperience implements Listener{
 
@@ -32,71 +35,72 @@ public class ToolsRequireExperience implements Listener{
     ));
 
     @EventHandler
-    public void ironToolsRequireExperience(PlayerMoveEvent event){
+    public void shitRequiresExperience(PlayerMoveEvent event){
         Player player = (Player) event.getPlayer();
         if (irontools.contains(player.getInventory().getItemInMainHand())){
             if (player.getLevel() < 5){
-                player.sendTitle("", "You need to be more than Level 5 to use Iron tools", 1, 2, 1);
-                player.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 3, 100, true, true));
+                ExperienceManager.ironTools(player);
             }
         }
+
         if (diamondtools.contains(player.getInventory().getItemInMainHand())){
             if (player.getLevel() < 7){
-                player.sendTitle("", "You need to be more than Level 7 to use Diamond tools", 1, 2, 1);
-                player.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 3, 100, true, true));
+                ExperienceManager.diamondTools(player);
             }
         }
 
 
-        if (player.getEquipment().getHelmet().equals(new ItemStack(Material.IRON_HELMET))){
+        if (Objects.equals(Objects.requireNonNull(player.getEquipment()).getHelmet(), new ItemStack(Material.IRON_HELMET))){
             if (player.getLevel() < 5){
-                player.sendTitle("", "You need to be more than Level 5 to use Iron Armor", 1, 2, 1);
-                player.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 3, 100, true, true));
+                ExperienceManager.ironArmor(player);
             }
         }
-        if (player.getEquipment().getChestplate().equals(new ItemStack(Material.IRON_CHESTPLATE))){
+        if (Objects.equals(player.getEquipment().getChestplate(), new ItemStack(Material.IRON_CHESTPLATE))){
             if (player.getLevel() < 5){
-                player.sendTitle("", "You need to be more than Level 5 to use Iron Armor", 1, 2, 1);
-                player.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 3, 100, true, true));
+                ExperienceManager.ironArmor(player);
             }
         }
-        if (player.getEquipment().getLeggings().equals(new ItemStack(Material.IRON_LEGGINGS))){
+        if (Objects.equals(player.getEquipment().getLeggings(), new ItemStack(Material.IRON_LEGGINGS))){
             if (player.getLevel() < 5){
-                player.sendTitle("", "You need to be more than Level 5 to use Iron Armor", 1, 2, 1);
-                player.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 3, 100, true, true));
+                ExperienceManager.ironArmor(player);
             }
         }
-        if (player.getEquipment().getBoots().equals(new ItemStack(Material.IRON_BOOTS))){
+        if (Objects.equals(player.getEquipment().getBoots(), new ItemStack(Material.IRON_BOOTS))){
             if (player.getLevel() < 5){
-                player.sendTitle("", "You need to be more than Level 5 to use Iron Armor", 1, 2, 1);
-                player.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 3, 100, true, true));
+                ExperienceManager.ironArmor(player);
             }
         }
 
 
 
-        if (player.getEquipment().getHelmet().equals(new ItemStack(Material.DIAMOND_HELMET))){
+        if (Objects.equals(player.getEquipment().getHelmet(), new ItemStack(Material.DIAMOND_HELMET))){
             if (player.getLevel() < 7){
-                player.sendTitle("", "You need to be more than Level 7 to use Diamond Armor", 1, 2, 1);
-                player.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 3, 100, true, true));
+                ExperienceManager.diamondArmor(player);
             }
+        }
+        if (player.getEquipment().getChestplate() == null) {
+            return;
         }
         if (player.getEquipment().getChestplate().equals(new ItemStack(Material.DIAMOND_CHESTPLATE))){
+
             if (player.getLevel() < 7){
-                player.sendTitle("", "You need to be more than Level 7 to use Diamond Armor", 1, 2, 1);
-                player.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 3, 100, true, true));
+                ExperienceManager.diamondArmor(player);
             }
+        }
+        if (player.getEquipment().getLeggings() == null) {
+            return;
         }
         if (player.getEquipment().getLeggings().equals(new ItemStack(Material.DIAMOND_LEGGINGS))){
             if (player.getLevel() < 7){
-                player.sendTitle("", "You need to be more than Level 7 to use Diamond Armor", 1, 2, 1);
-                player.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 3, 100, true, true));
+                ExperienceManager.diamondArmor(player);
             }
+        }
+        if (player.getEquipment().getBoots() == null){
+            return;
         }
         if (player.getEquipment().getBoots().equals(new ItemStack(Material.DIAMOND_BOOTS))){
             if (player.getLevel() < 7){
-                player.sendTitle("", "You need to be more than Level 7 to use Diamond Armor", 1, 2, 1);
-                player.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 3, 100, true, true));
+                ExperienceManager.diamondArmor(player);
             }
         }
     }

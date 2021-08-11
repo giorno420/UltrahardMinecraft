@@ -8,6 +8,7 @@ import com.giornosmp.ultrahardminecraft.HostileMobs.*;
 import com.giornosmp.ultrahardminecraft.PassiveMobs.PissEndermen;
 import com.giornosmp.ultrahardminecraft.PassiveMobs.PissIronGolems;
 import com.giornosmp.ultrahardminecraft.PassiveMobs.ReduceFoodSources;
+import org.bukkit.Server;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.ChatColor;
 
@@ -48,9 +49,10 @@ public final class UltrahardMinecraft extends JavaPlugin {
 
         getServer().getPluginManager().registerEvents(new ToolsRequireExperience(), this);
         // all iron and diamond tools require experience levels to be used
-        
+
         getServer().getPluginManager().registerEvents(new AttackOnTitan(), this);
         // a zombie has a 1 in 50 chance of dying and becoming a titan (giant) I'm gonna work on the zombie AI soon fuck you
+
 
     }
 
