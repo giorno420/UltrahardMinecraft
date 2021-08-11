@@ -12,10 +12,8 @@ import org.bukkit.event.entity.EntityDamageEvent;
 
 public class Lava implements Listener {
 
-    double maxhealth = 20;
-
     @EventHandler
-    public void onLavaDipEvent(EntityDamageByBlockEvent event){
+    public void onLavaDipEvent(EntityDamageByBlockEvent event) {
 
         if (event.getEntityType() == EntityType.PLAYER) {
 
@@ -23,16 +21,17 @@ public class Lava implements Listener {
 
             if (event.getCause().equals(EntityDamageEvent.DamageCause.LAVA)) {
 
-                player.setHealth(maxhealth);
-                player.sendRawMessage(String.valueOf(event.getDamager()));
-                maxhealth -= 4;
+                player.damage(1000000);
 
-                if (maxhealth == 0) {
-                    player.setHealth(0);
-                    maxhealth = 20;
-                }
+                if (event.getCause().equals(EntityDamageEvent.DamageCause.FIRE)) {
+                    player.setFireTicks(1000000000);
+                } // permanently sets a person on fire unless they're extinguished
+
             }
-            if (event.getCause().equals(EntityDamageEvent.DamageCause.FIRE)){ player.setFireTicks(1000000000); } // permanently sets a person on fire unless they're extinguished
+
         }
+
     }
+
 }
+
