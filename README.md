@@ -18,6 +18,8 @@ i originally made this for a youtuber but he pussied out because he didnt wanna 
  - You can't use diamond tools until your XP Level is 7 or over it. (kinda scuffed)
  - A regular zombie dying has a 1 in 50 chance of turning into a titan (a giant zombie. I'm gonna work on the zombie hostility AI soon)
  - Remember how mobs have better loot? Yeah, they will NEVER drop any of it, because the chances of them dropping their loot are 0%
+ - All zombie pigmen attack you in proximity
+ - You get "hungry" after you wake up :/
 
 Message me on <a href="https://discord.com/users/587539085439008780">Discord</a> to use this on a video or something, or if you wanna hire me (Jaden-MAN please accept my offer)
 ## Issues
