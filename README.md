@@ -21,7 +21,7 @@ i originally made this for a youtuber but he pussied out because he didnt wanna 
  - All zombie pigmen attack you in proximity
  - You get "hungry" after you wake up :/
 
-Message me on <a href="https://discord.com/users/587539085439008780">Discord</a> to use this on a video or something, or if you wanna hire me (Jaden-MAN please accept my offer)
+Message me on <a href="https://discord.com/users/587539085439008780">Discord</a> to use this on a video or something, or if you wanna hire me
 ## Issues
 Did you find an issue? Is your server completely fucked because of my plugin? Fear not, and follow the steps below!
 1. Scream and cry at your messed server.
