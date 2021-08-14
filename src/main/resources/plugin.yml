@@ -5,3 +5,7 @@ api-version: 1.16
 authors: [ Giorno420 ]
 description: Makes Minecraft waay harder
 website: https://giorno.is-a-good.dev
+commands:
+  godkit:
+    description: for admins and mods to get god stuff instantly without hassle
+    usage: /<command>

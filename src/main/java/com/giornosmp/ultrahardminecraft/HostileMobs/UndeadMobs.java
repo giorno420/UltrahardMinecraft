@@ -1,6 +1,7 @@
 package com.giornosmp.ultrahardminecraft.HostileMobs;
 
 import com.sun.tools.javac.jvm.Items;
+import org.apache.commons.lang.ObjectUtils;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.*;
@@ -72,7 +73,6 @@ public class UndeadMobs implements Listener {
         if (undeadmobspawnevent.getEntityType() == EntityType.DROWNED) {
 
             Drowned drowned = (Drowned) undeadmobspawnevent.getEntity();
-
             drowned.getEquipment().setChestplate(chestplate);
             drowned.getEquipment().setChestplateDropChance(0);
             drowned.getEquipment().setItemInMainHand(new ItemStack(Material.TRIDENT));

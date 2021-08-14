@@ -1,21 +1,17 @@
 package com.giornosmp.ultrahardminecraft.Experience;
 
 import org.bukkit.Material;
-import org.bukkit.entity.Item;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.potion.PotionEffect;
-import org.bukkit.potion.PotionEffectType;
 
 import java.util.Objects;
 import java.util.Set;
 import java.util.HashSet;
 import java.util.Arrays;
 
-import com.giornosmp.ultrahardminecraft.Experience.ExperienceManager;
 
 public class ToolsRequireExperience implements Listener{
 

@@ -21,7 +21,7 @@ public class ReduceFoodSources implements Listener {
 
             if (cowroulette == 0){
                 Cow cow = (Cow) passivemobspawn.getEntity();
-                cow.damage(14);
+                cow.remove();
             }
             else {
                 System.out.print(""); // again I absolutely hate the fact that I can't write an empty else
@@ -34,7 +34,7 @@ public class ReduceFoodSources implements Listener {
 
             if (sheepRoulette == 0){
                 Sheep sheep = (Sheep) passivemobspawn.getEntity();
-                sheep.damage(14);
+                sheep.remove();
             }
             else {
                 System.out.print("");
@@ -46,7 +46,7 @@ public class ReduceFoodSources implements Listener {
 
             if (pigRoulette == 0){
                 Pig pig = (Pig) passivemobspawn.getEntity();
-                pig.damage(14);
+                pig.remove();
             }
             else {
                 System.out.print("");
@@ -58,7 +58,7 @@ public class ReduceFoodSources implements Listener {
 
             if (codRoulette == 0){
                 Cod cod = (Cod) passivemobspawn.getEntity();
-                cod.damage(14);
+                cod.remove();
             }
             else{
                 System.out.print("");
@@ -70,7 +70,7 @@ public class ReduceFoodSources implements Listener {
 
             if (salmonRoulette == 0){
                 Salmon salmon = (Salmon) passivemobspawn.getEntity();
-                salmon.damage(14);
+                salmon.remove();
             }
             else{
                 System.out.print("");
