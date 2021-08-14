@@ -41,4 +41,4 @@ If you wanna donate to this project and make my suffering suffer less, visit my 
 I have no clue what else to add :D
 
 If you think of a good idea for me to add, just make an issue with the "New Idea" tag!
-Also don't make them too complicated since this is only my 2nd plugin 
+Go wild with the ideas! I love a challenge.
