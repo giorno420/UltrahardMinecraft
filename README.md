@@ -1,4 +1,5 @@
 <img src="https://img.shields.io/tokei/lines/github/giorno420/UltrahardModeMinecraft?label=Total%20lines"> <img alt="Discord" src="https://img.shields.io/discord/794061682279317554"> <img alt="Bitbucket open issues" src="https://img.shields.io/bitbucket/issues/giorno420/UltrahardModeMinecraft">
+[![Build Status](https://app.travis-ci.com/giorno420/UltrahardMinecraft.svg?branch=main)](https://app.travis-ci.com/giorno420/UltrahardMinecraft)
 
 # Ultrahard Mode Minecraft
 i originally made this for a youtuber but he pussied out because he didnt wanna pay for it so i just decided to make this open source so you can suffer in your own server!
