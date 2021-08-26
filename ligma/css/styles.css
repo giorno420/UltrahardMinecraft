@@ -1,0 +1,61 @@
+.title {
+    font-family: 'Lucida Console';
+    text-align: center;
+    font-size: 69px;
+    transition: .5s ease-in-out;
+    font-style: italic;
+    text-decoration: underline;
+}
+.titleIMG {
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    transition: .5s ease-in-out;
+    display: block;
+}
+
+body {
+    background-color: lightseagreen;
+    transition: .5s ease-in-out;
+}
+html {
+    transition: .5s ease-in-out;
+}
+.features {
+    text-align: center;
+    font-family: 'Lucida Console';
+    font-size: 30px;
+    transition: .5s ease-in-out;
+}
+.featuresList {
+    transition: .5s ease-in-out;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 100px;
+}
+footer {
+    background-color: gainsboro;
+    width: 100%;
+    padding: 1px;
+    left: 0;
+    border-style: solid;
+    border-color: darkslategrey;
+    bottom: 0;
+}
+.footerList {
+    list-style-type: none;
+    margin-left: 200px;
+}
+a:hover {
+    color: #69a6ff;
+    text-decoration: none;
+}
+a {
+    font-family: 'Lucida Console';
+    text-decoration: none;
+}
+
+.download {
+    font-family: 'Lucida Console';
+    text-align: center;
+}
