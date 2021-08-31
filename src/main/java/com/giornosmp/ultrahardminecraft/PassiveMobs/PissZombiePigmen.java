@@ -1,4 +1,4 @@
-package com.giornosmp.ultrahardminecraft.Nether;
+package com.giornosmp.ultrahardminecraft.PassiveMobs;
 
 import org.bukkit.GameMode;
 import org.bukkit.entity.Entity;
@@ -8,6 +8,7 @@ import org.bukkit.entity.PigZombie; // why the fuck did mojang rename "Zombie Pi
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerMoveEvent;
+import org.bukkit.potion.PotionEffectType;
 
 public class PissZombiePigmen implements Listener {
 
@@ -17,6 +18,7 @@ public class PissZombiePigmen implements Listener {
 
         for (Entity entity : player.getNearbyEntities(3, 3, 3)){
             if (!(player.getGameMode().equals(GameMode.SURVIVAL))){ break; }
+            if (player.hasPotionEffect(PotionEffectType.INVISIBILITY)){ break; }
             if (entity.getType() == EntityType.ZOMBIFIED_PIGLIN){
                 PigZombie zombiepigman = (PigZombie) entity;
                 zombiepigman.setTarget(player);

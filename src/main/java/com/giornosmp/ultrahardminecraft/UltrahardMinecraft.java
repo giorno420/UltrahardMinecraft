@@ -2,19 +2,21 @@ package com.giornosmp.ultrahardminecraft;
 
 import com.giornosmp.ultrahardminecraft.Admin.NetheriteKit;
 import com.giornosmp.ultrahardminecraft.Experience.ToolsRequireExperience;
-import com.giornosmp.ultrahardminecraft.ExplodingBeds.ExplodingBeds;
-import com.giornosmp.ultrahardminecraft.ExplodingBeds.Hungery;
+import com.giornosmp.ultrahardminecraft.Beds.ExplodingBeds;
+import com.giornosmp.ultrahardminecraft.Beds.Hungery;
 import com.giornosmp.ultrahardminecraft.HostileBlocks.Lava;
 import com.giornosmp.ultrahardminecraft.HostileMobs.*;
-import com.giornosmp.ultrahardminecraft.Nether.GoldArmorMelts;
-import com.giornosmp.ultrahardminecraft.Nether.NetherBurnsYou;
-import com.giornosmp.ultrahardminecraft.Nether.PissZombiePigmen;
+import com.giornosmp.ultrahardminecraft.Nether.*;
+import com.giornosmp.ultrahardminecraft.PassiveMobs.PissZombiePigmen;
 import com.giornosmp.ultrahardminecraft.PassiveMobs.PissEndermen;
 import com.giornosmp.ultrahardminecraft.PassiveMobs.PissIronGolems;
 import com.giornosmp.ultrahardminecraft.PassiveMobs.ReduceFoodSources;
 import com.giornosmp.ultrahardminecraft.Versions.CheckLatestVersion;
+import com.giornosmp.ultrahardminecraft.HostileBlocks.Fire;
+import com.giornosmp.ultrahardminecraft.HostileBlocks.Splinters;
 import org.bukkit.Bukkit;
 import org.bukkit.Difficulty;
+import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.ChatColor;
@@ -22,6 +24,7 @@ import org.bukkit.ChatColor;
 public final class UltrahardMinecraft extends JavaPlugin {
 
     private final String pluginPrefix = ChatColor.WHITE + "[" + ChatColor.DARK_RED + "Ultrahard Minecraft" + ChatColor.WHITE + "] ";
+    private final String version = "beta";
 
 
     @Override
@@ -66,20 +69,32 @@ public final class UltrahardMinecraft extends JavaPlugin {
         pluginmanager.registerEvents(new ToolsRequireExperience(), this);
         // all iron and diamond tools require experience levels to be used
 
-        pluginmanager.registerEvents(new AttackOnTitan(), this);
-        // a zombie has a 1 in 50 chance of dying and becoming a titan (giant) I'm gonna work on the zombie AI soon fuck you
-
         pluginmanager.registerEvents(new NetherBurnsYou(), this);
         // 1 in 1000 chance of nether burning you
 
         pluginmanager.registerEvents(new PissZombiePigmen(), this);
-        // pisses all zombie pigmen in a 3 block radius to you
+        // pisses all zombie pigmen
 
         pluginmanager.registerEvents(new GoldArmorMelts(), this);
-        // testing
+        // gold armor melts in nether because it has a low melting point
 
         pluginmanager.registerEvents(new Hungery(), this);
         // makes you hungry after sleeping because that's how i woke up today
+
+        pluginmanager.registerEvents(new Fire(), this);
+        // fire always stays
+
+        pluginmanager.registerEvents(new Splinters(), this);
+        // you get a splinter when you break wood
+
+        pluginmanager.registerEvents(new LesserPiglins(), this);
+        // decreases piglin spawn rate for the people with "dream luck"
+
+        pluginmanager.registerEvents(new IncreaseMobs(), this);
+        // increases the deadly nether mobs
+
+        pluginmanager.registerEvents(new Blazes(), this);
+        // stuff related to blazes
 
         if (pluginVersion.equals("beta")) {
             System.out.println(pluginPrefix + "UltrahardMinecraft beta is enabled!");
@@ -92,7 +107,13 @@ public final class UltrahardMinecraft extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
+        try {
+            System.out.println(pluginPrefix + "Successfully disabled UltrahardMinecraft " + version + "!");
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+            System.out.println(pluginPrefix + "Closing UltrahardMinecraft " + version + " had an error!");
+        }
     }
 
 }

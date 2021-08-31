@@ -19,10 +19,15 @@ public class NetherBurnsYou implements Listener {
         if (randint == 420){
             if (player.getWorld().getEnvironment().equals(World.Environment.NETHER)) {
                 player.setFireTicks(1000000000);
+                displayTitle(player);
             }
             if (!(player.getWorld().getEnvironment().equals(World.Environment.NETHER))){
                 System.out.print("");
             }
         }
+    }
+
+    private void displayTitle(Player player){
+        player.sendTitle("", "The nether is too hot for you.", 2, 3, 20);
     }
 }

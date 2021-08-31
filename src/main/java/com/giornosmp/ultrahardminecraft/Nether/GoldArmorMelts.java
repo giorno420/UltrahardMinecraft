@@ -22,7 +22,7 @@ public class GoldArmorMelts implements Listener {
         Player player = (Player) event.getPlayer();
 
         if (player.getWorld().getEnvironment().equals(World.Environment.NETHER)) {
-            if (!(player.getInventory().getHelmet().equals(new ItemStack(Material.GOLDEN_HELMET)))) return;
+
             if (player.getInventory().getHelmet().equals(new ItemStack(Material.GOLDEN_HELMET))) {
                 ItemStack helm = player.getInventory().getHelmet();
                 ItemMeta helmMeta = helm.getItemMeta();
@@ -31,13 +31,53 @@ public class GoldArmorMelts implements Listener {
                 if (randint == 14) {
                     if (helmet == null) return;
                     helmet.setDamage(damage);
+                    helm.setItemMeta((ItemMeta) helmet);
                     damage++;
                 }
-                helm.setItemMeta((ItemMeta) helmet);
-                // test plugin and fix this
             }
+
+            if (player.getInventory().getChestplate().equals(new ItemStack(Material.GOLDEN_CHESTPLATE))) {
+                ItemStack chest = player.getInventory().getHelmet();
+                ItemMeta chestMeta = chest.getItemMeta();
+                Damageable chestplate = (Damageable) chestMeta;
+
+                if (randint == 14) {
+                    if (chestplate == null) return;
+                    chestplate.setDamage(damage);
+                    chest.setItemMeta((ItemMeta) chestplate);
+                    damage++;
+                }
+            }
+
+            if (player.getInventory().getLeggings().equals(new ItemStack(Material.GOLDEN_LEGGINGS))) {
+                ItemStack leg = player.getInventory().getHelmet();
+                ItemMeta legMeta = leg.getItemMeta();
+                Damageable leggings = (Damageable) legMeta;
+
+                if (randint == 14) {
+                    if (leggings == null) return;
+                    leggings.setDamage(damage);
+                    leg.setItemMeta((ItemMeta) leggings);
+                    damage++;
+                }
+            }
+
+            if (player.getInventory().getBoots().equals(new ItemStack(Material.GOLDEN_BOOTS))) {
+                ItemStack boot = player.getInventory().getHelmet();
+                ItemMeta bootMeta = boot.getItemMeta();
+                Damageable boots = (Damageable) bootMeta;
+
+                if (randint == 14) {
+                    if (boots == null) return;
+                    boots.setDamage(damage);
+                    boot.setItemMeta((ItemMeta) boots);
+                    damage++;
+                }
+
+            }
+
         }
-        if (!(player.getWorld().getEnvironment().equals(World.Environment.NETHER))) return;
+
     }
 
 }

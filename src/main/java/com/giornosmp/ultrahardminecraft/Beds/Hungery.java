@@ -1,4 +1,4 @@
-package com.giornosmp.ultrahardminecraft.ExplodingBeds;
+package com.giornosmp.ultrahardminecraft.Beds;
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

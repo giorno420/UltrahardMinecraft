@@ -21,7 +21,7 @@ public class Lava implements Listener {
 
             if (event.getCause().equals(EntityDamageEvent.DamageCause.LAVA)) {
 
-                player.setNoDamageTicks(0);
+                player.damage(3);
 
                 if (event.getCause().equals(EntityDamageEvent.DamageCause.FIRE)) {
                     player.setFireTicks(1000000000);
