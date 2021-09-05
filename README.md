@@ -35,7 +35,7 @@ Or if you're smart enough to implement your own solution, please make a pull req
 Beta
 
 ## License
-This project is licensed under the GPL-3.0 License
+This project is licensed under the MIT License
 
 ## Fund this project
 If you wanna donate to this project, visit my PayPal page https://paypal.me/giorno42069. It's really helpful and it'll make my day
