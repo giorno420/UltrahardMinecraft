@@ -1,4 +1,4 @@
-<img src="https://img.shields.io/tokei/lines/github/giorno420/UltrahardModeMinecraft?label=Total%20lines"> <img alt="Discord" src="https://img.shields.io/discord/794061682279317554"> <img alt="Bitbucket open issues" src="https://img.shields.io/bitbucket/issues/giorno420/UltrahardModeMinecraft">
+<img src="https://img.shields.io/tokei/lines/github/giorno420/UltrahardModeMinecraft?label=Total%20lines"> <img alt="Discord" src="https://img.shields.io/discord/794061682279317554">
 [![Build Status](https://app.travis-ci.com/giorno420/UltrahardMinecraft.svg?branch=main)](https://app.travis-ci.com/giorno420/UltrahardMinecraft)
 
 # Ultrahard Mode Minecraft
