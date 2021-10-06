@@ -15,7 +15,7 @@
  - All spiders are faster, since all the above wasn't creepy enough.
  - You can't use iron tools until your XP Level is 5 or over it.
  - You can't use diamond tools until your XP Level is 7 or over it.
- - The chances mosb dropping their good loot is 0%.
+ - The chances mobs dropping their good loot is 0%.
  - All zombie pigmen attack you in proximity.
  - You get hungrier when you wake up.
  - You randomly get splinters when breaking wood with bare hands.
