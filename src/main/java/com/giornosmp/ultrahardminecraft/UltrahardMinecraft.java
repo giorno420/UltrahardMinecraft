@@ -4,6 +4,7 @@ import com.giornosmp.ultrahardminecraft.Admin.NetheriteKit;
 import com.giornosmp.ultrahardminecraft.Experience.ToolsRequireExperience;
 import com.giornosmp.ultrahardminecraft.Beds.ExplodingBeds;
 import com.giornosmp.ultrahardminecraft.Beds.Hungery;
+import com.giornosmp.ultrahardminecraft.HostileBlocks.Crystals;
 import com.giornosmp.ultrahardminecraft.HostileBlocks.Lava;
 import com.giornosmp.ultrahardminecraft.HostileMobs.*;
 import com.giornosmp.ultrahardminecraft.Nether.*;
@@ -16,7 +17,6 @@ import com.giornosmp.ultrahardminecraft.HostileBlocks.Fire;
 import com.giornosmp.ultrahardminecraft.HostileBlocks.Splinters;
 import org.bukkit.Bukkit;
 import org.bukkit.Difficulty;
-import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.ChatColor;
@@ -29,6 +29,7 @@ public final class UltrahardMinecraft extends JavaPlugin {
 
     @Override
     public void onEnable() {
+
         PluginManager pluginmanager = getServer().getPluginManager();
         this.getCommand("godkit").setExecutor(new NetheriteKit());
 
@@ -96,24 +97,12 @@ public final class UltrahardMinecraft extends JavaPlugin {
         pluginmanager.registerEvents(new Blazes(), this);
         // stuff related to blazes
 
-        if (pluginVersion.equals("beta")) {
-            System.out.println(pluginPrefix + "UltrahardMinecraft beta is enabled!");
-        }
-        if (!(pluginVersion.equals("beta"))) {
-            System.out.println(pluginPrefix + "You're running an old version of UltrahardMinecraft! Go to https://github.com/giorno420/UltrahardMinecraft and get the latest version!");
-        }
+        pluginmanager.registerEvents(new Skeletons(), this);
+        // aim bot
 
-    }
+        pluginmanager.registerEvents(new Crystals(), this);
+        // spawns tnt when end crystals are broken
 
-    @Override
-    public void onDisable() {
-        try {
-            System.out.println(pluginPrefix + "Successfully disabled UltrahardMinecraft " + version + "!");
-        }
-        catch (Exception e) {
-            e.printStackTrace();
-            System.out.println(pluginPrefix + "Closing UltrahardMinecraft " + version + " had an error!");
-        }
     }
 
 }

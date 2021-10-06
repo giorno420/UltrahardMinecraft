@@ -95,6 +95,7 @@ public class UndeadMobs implements Listener {
             skeleton.getEquipment().setHelmetDropChance(0);
 
             ItemStack enchantedBow = new ItemStack(Material.BOW);
+            enchantedBow.addEnchantment(Enchantment.ARROW_FIRE, 1);
             enchantedBow.addUnsafeEnchantment(Enchantment.ARROW_DAMAGE, 3);
             skeleton.getEquipment().setItemInMainHand(enchantedBow);
             skeleton.getEquipment().setHelmetDropChance(0);

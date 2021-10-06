@@ -22,6 +22,8 @@
  - Piglin spawns are decreased for the people with "Dream luck".
  - Wither skeleton, Zombie Pigmen, and Piglin Brutes have a higher spawn rate.
  - Blazes have faster fireballs and have chances to drop "Burnt out Blaze rods" instead of regular Blaze rods.
+ - Skeletons now have aimbot, and machine guns....
+ - End crystals will now spawn TNT all over themselves when broken
 
 Message me on <a href="https://discord.com/users/587539085439008780">Discord</a> if you wanna hire me
 ## Issues

@@ -1,7 +1,7 @@
 name: UltrahardMinecraft
 version: ${project.version}
 main: com.giornosmp.ultrahardminecraft.UltrahardMinecraft
-api-version: 1.16
+api-version: 1.17
 authors: [ Giorno420 ]
 description: Makes Minecraft waay harder
 website: https://giorno.is-a-good.dev
