@@ -30,7 +30,7 @@ Message me on <a href="https://discord.com/users/587539085439008780">Discord</a>
 Did you find an issue? Is your server completely fucked because of my plugin? Fear not, and follow the steps below!
 1. Scream and cry at your messed server.
 2. Open the server console and copy the traceback error.
-3. Make an issue, and be as precise as you can about it. What were you doing when it messed up? Did it happen more than once? Copy and paste the error logs from the server console to your issue.
+3. Make an issue, and be as precise as you can about it. What were you doing when it messed up? <s>What are your credit card digits?</s> Did it happen more than once? Copy and paste the error logs from the server console to your issue.
 Or if you're smart enough to implement your own solution, please make a pull request for it!
 
 ## Version
