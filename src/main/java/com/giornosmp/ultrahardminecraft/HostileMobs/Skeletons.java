@@ -32,7 +32,7 @@ public class Skeletons implements Listener {
                 @Override
                 public void run() {
                     if (i[0] < 10){
-                        ((ProjectileSource) event.getEntity()).launchProjectile(Arrow.class, vector);
+                        event.getEntity().launchProjectile(Arrow.class, vector);
                         i[0]++;
                     }
                     else if (i[0] > 10){
