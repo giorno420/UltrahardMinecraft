@@ -73,11 +73,7 @@ public class GoldArmorMelts implements Listener {
                     boot.setItemMeta((ItemMeta) boots);
                     damage++;
                 }
-
             }
-
         }
-
     }
-
 }

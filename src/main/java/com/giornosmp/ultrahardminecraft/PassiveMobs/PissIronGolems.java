@@ -18,9 +18,8 @@ public class PissIronGolems implements Listener {
         Player player = event.getPlayer();
         for (Entity entity : player.getNearbyEntities(10, 10, 10)){
 
-            if (player.getGameMode() != GameMode.SURVIVAL) { break; }
-
-            if (player.hasPotionEffect(PotionEffectType.INVISIBILITY)){ break; }
+            if (player.getGameMode() != GameMode.SURVIVAL) break;
+            if (player.hasPotionEffect(PotionEffectType.INVISIBILITY)) break;
 
             if (entity.getType() == EntityType.IRON_GOLEM){
                 IronGolem golem = (IronGolem) entity;

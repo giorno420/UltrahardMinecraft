@@ -1,7 +1,5 @@
 package com.giornosmp.ultrahardminecraft.HostileMobs;
 
-// this class allows skeletons, wither skeletons and strays (skeleton type mobs) to give the user a withering effect when they are attacked
-
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -16,19 +14,19 @@ import java.util.Set;
 
 public class SkeletonTypeMobs implements Listener {
 
-    String[] _SkeletonMobs = {
-            EntityType.SKELETON.name(),
-            EntityType.STRAY.name()
-    };
-    Set<String> SkeletonMobs = new HashSet<>(Arrays.asList(_SkeletonMobs));
+    Set<String> SkeletonMobs = new HashSet<>(
+            Arrays.asList(
+                    EntityType.SKELETON.name(),
+                    EntityType.STRAY.name()
+            )
+    );
 
     @EventHandler
     public void onAttackEvent(EntityDamageByEntityEvent event) {
 
         if (event.getEntityType() == EntityType.PLAYER){
-            Player player = (Player) event.getEntity();
             if (SkeletonMobs.contains(event.getDamager().getName())){
-                player.addPotionEffect(new PotionEffect(PotionEffectType.WITHER, 5, 1, true, true));
+                ((Player)event.getEntity()).addPotionEffect(new PotionEffect(PotionEffectType.WITHER, 5, 1, true, true));
             }
         }
     }

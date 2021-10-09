@@ -15,6 +15,15 @@ import java.util.Arrays;
 
 public class ToolsRequireExperience implements Listener{
 
+    /*
+    * I coded this like 2 months ago but
+    * I don't understand any of it like
+    * WHY AND HOW DOES IT WORK
+    *
+    *
+    * so no im not optimising this
+    */
+
     Set<ItemStack> irontools = new HashSet<>(Arrays.asList(
             new ItemStack(Material.IRON_AXE),
             new ItemStack(Material.IRON_HOE),

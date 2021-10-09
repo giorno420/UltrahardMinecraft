@@ -10,11 +10,12 @@ import java.util.Random;
 
 public class NetherBurnsYou implements Listener {
 
+    final int randint = new Random().nextInt(1000);
+
     @EventHandler
     public void netherBurnsYou(PlayerMoveEvent event) {
 
         Player player = (Player) event.getPlayer();
-        int randint = new Random().nextInt(1000);
 
         if (randint == 420){
             if (player.getWorld().getEnvironment().equals(World.Environment.NETHER)) {

@@ -25,7 +25,7 @@ public class HeatingIronArmor implements Listener {
             }
         }
     }
-    @SuppressWarnings("Deprecated")
+
     private void showMessage(Player player, String message) {
         player.sendTitle("", message, 2, 5, 20);
     }

@@ -16,21 +16,15 @@ public class PissEndermen implements Listener {
 
         Player player = event.getPlayer();
 
-
-
             for (Entity entity : player.getNearbyEntities(9, 9, 9)){
 
-                if (!(player.getGameMode().equals(GameMode.SURVIVAL))){ break; }
-
-                if (player.hasPotionEffect(PotionEffectType.INVISIBILITY)){ break; }
+                if (!(player.getGameMode().equals(GameMode.SURVIVAL))) break;
+                if (player.hasPotionEffect(PotionEffectType.INVISIBILITY)) break;
 
                 if (entity instanceof Enderman) {
-
                     Enderman enderman = (Enderman) entity;
                     if (enderman.getTarget() == null){
-
                         enderman.setTarget(player);
-
                 }
             }
         }

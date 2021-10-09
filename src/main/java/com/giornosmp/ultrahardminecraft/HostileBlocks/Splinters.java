@@ -20,8 +20,9 @@ public class Splinters implements Listener {
         if (event.getPlayer().getGameMode().equals((Object) GameMode.CREATIVE) || event.getPlayer().getGameMode().equals((Object)GameMode.SPECTATOR)) {
             return;
         }
-        if (event.getAction().equals((Object) Action.LEFT_CLICK_BLOCK) && event.getPlayer().getEquipment().getItemInMainHand().getType().equals(Material.AIR)) {
-            final String blockMaterial = event.getClickedBlock().getType().toString().toLowerCase();
+
+        if (event.getAction().equals(Action.LEFT_CLICK_BLOCK) && event.getPlayer().getEquipment().getItemInMainHand().getType().equals(Material.AIR)) {
+            String blockMaterial = event.getClickedBlock().getType().toString().toLowerCase();
             if (blockMaterial.contains("log") && randint == 10) {
                 displayTitle(event.getPlayer());
                 event.getPlayer().damage(1.5);
@@ -30,7 +31,7 @@ public class Splinters implements Listener {
 
     }
 
-    private void displayTitle(final Player player) {
+    private void displayTitle(Player player) {
         player.sendTitle("", "You got a splinter from breaking wood barehanded!", 2, 3, 20);
     }
 

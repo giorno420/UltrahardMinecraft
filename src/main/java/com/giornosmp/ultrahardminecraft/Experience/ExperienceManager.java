@@ -21,7 +21,7 @@ public class ExperienceManager {
     public static void diamondArmor(Player player){
         showMessage(player, "You need to be more than Level 7 to use Diamond armor");
     }
-    @SuppressWarnings("Deprecated")
+
     public static void showMessage(Player player, String message) {
         player.sendTitle("", message, 2, 5, 20);
         player.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 3, 100, true, true));
